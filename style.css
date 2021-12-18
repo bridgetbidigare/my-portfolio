@@ -1,0 +1,21 @@
+body {
+  text-align: center;
+}
+
+h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 60px;
+  margin: 50px 0 0;
+}
+
+h2 {
+  font-family: "Prata", serif;
+  font-size: 30px;
+  margin: 0 0 40px;
+}
+
+p {
+  font-family: "Tajawal", sans-serif;
+  font-size: 20px;
+  margin: 0 350px 30px;
+}
