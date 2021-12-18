@@ -36,18 +36,45 @@
       src="https://kit.fontawesome.com/39faf47002.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <h3>👋🏻 hello, i'm</h3>
-    <h1>Bridget Bidigare</h1>
-    <h2>Front-end developer based in Chicago, IL 👩🏻‍💻</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur.
-    </p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Bridget Bidigare</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse d-lg-flex justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="/pages/about.html">About me</a>
+            <a class="nav-link" href="/pages/projects.html">My projects</a>
+            <a class="nav-link" href="/">Contact me</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="homepage-hero">
+      <h3>hello, i'm</h3>
+      <h1>Bridget Bidigare</h1>
+      <h2>Front-end developer based in Chicago, IL</h2>
+    </div>
     <a href="/pages/about.html" title="About me" class="links">About me</a>
     <a href="/pages/projects.html" title="My projects" class="links"
       >My projects</a
