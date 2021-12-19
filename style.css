@@ -8,6 +8,11 @@
 
 html {
   border: 20px solid var(--accent-color);
+  min-height: 100%;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
 }
 
 body {
@@ -17,7 +22,7 @@ body {
 }
 
 .navbar {
-  margin: -80px 0 50px;
+  margin: -80px 0 80px;
 }
 
 .navbar-brand {
@@ -59,22 +64,30 @@ h3 {
 }
 
 .homepage-hero {
-  background: rgba(255, 255, 255, 0.596);
+  background: rgba(255, 255, 255, 0.5);
   border-radius: 5px;
   max-width: 700px;
-  padding: 20px;
-  margin: 0 auto 30px;
+  padding: 60px 20px;
+  margin: 0 auto 60px;
+  border-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/094/original/image.png?1639852536)
+    13% round;
+  border-style: solid;
+  border-width: 50px;
+  border-image-outset: 10px;
 }
 
 p {
   font-family: var(--sans-serif-font);
   font-size: 18px;
   text-align: justify;
-  margin: 0 auto 40px;
-  max-width: 500px;
   background: rgba(255, 255, 255, 0.596);
-  padding: 30px;
+  padding: 50px;
   border-radius: 5px;
+}
+
+.container {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 a {
@@ -126,7 +139,7 @@ a:hover {
   color: #000;
 }
 
-img {
+.me-pic {
   width: 300px;
   border: 10px solid transparent;
   border-radius: 100%;
@@ -134,9 +147,18 @@ img {
   margin: 0 auto 30px;
 }
 
+.border-img {
+  transform: rotate(90deg);
+}
+
 footer {
   display: flex;
   justify-content: center;
-  margin: 70px 0 0;
+  margin: 90px 0 0;
   font-size: 24px;
+}
+
+iframe {
+  width: 600px;
+  height: 476px;
 }
