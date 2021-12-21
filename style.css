@@ -1,6 +1,7 @@
 :root {
   --accent-color: rgba(147, 197, 114, 0.719);
   --background-color: rgba(128, 128, 128, 0.062);
+  --section-background: rgba(255, 255, 255, 0.596);
   --serif-font: "DM Serif Display", serif;
   --accent-font: "Prata", serif;
   --sans-serif-font: "Tajawal", sans-serif;
@@ -9,16 +10,13 @@
 html {
   border: 20px solid var(--accent-color);
   min-height: 100%;
-  left: 0;
-  bottom: 0;
-  top: 0;
-  right: 0;
 }
 
 body {
   text-align: center;
   padding: 80px 0 50px;
   background: var(--background-color);
+  font-family: var(--sans-serif-font);
 }
 
 .navbar {
@@ -53,45 +51,49 @@ h1 {
 
 h2 {
   font-family: var(--accent-font);
-  font-size: 28px;
-  margin: 0;
+  font-size: 26px;
+  margin: 10px 0 0;
 }
 
 h3 {
   font-family: var(--accent-font);
-  font-size: 24px;
-  margin: 0 0 -15px;
+  font-size: 26px;
+  margin: 0 0 -10px;
+  font-weight: 600;
+}
+
+h4 {
+  font-family: var(--serif-font);
+  font-size: 50px;
 }
 
 .homepage-hero {
-  background: rgba(255, 255, 255, 0.5);
+  background: var(--section-background);
   border-radius: 5px;
   max-width: 700px;
   padding: 60px 20px;
-  margin: 0 auto 60px;
+  margin: 0 auto 100px;
   border-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/094/original/image.png?1639852536)
-    13% round;
+    50% round;
   border-style: solid;
   border-width: 50px;
   border-image-outset: 10px;
 }
 
 p {
-  font-family: var(--sans-serif-font);
   font-size: 18px;
   text-align: justify;
-  background: rgba(255, 255, 255, 0.596);
+  background: var(--section-background);
   padding: 50px;
   border-radius: 5px;
 }
 
-.container {
+.about-me-container {
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
 a {
-  font-family: var(--sans-serif-font);
   color: black;
   margin: 0 10px;
   font-weight: 600;
@@ -103,7 +105,6 @@ a:hover {
 }
 
 .links {
-  font-family: var(--sans-serif-font);
   padding: 10px 15px 10px;
   outline: 0;
   border: 1px solid rgba(0, 0, 0, 0.452);
@@ -161,4 +162,55 @@ footer {
 iframe {
   width: 600px;
   height: 476px;
+}
+
+.certificate {
+  width: 500px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.cert-section {
+  background: var(--section-background);
+  border-radius: 10px;
+  margin: 40px 0;
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  h4 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 990px) {
+  .homepage-hero {
+    border-image-slice: 50%;
+    border-image-outset: 0;
+  }
+
+  .certificate {
+    display: none;
+  }
+
+  .cert-section {
+    width: 100%;
+    background: none;
+  }
+
+  .homepage-hero {
+    margin-bottom: 10px;
+  }
 }
