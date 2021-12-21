@@ -168,12 +168,15 @@ iframe {
   width: 500px;
   border-radius: 10px;
   position: relative;
+  z-index: 2;
 }
 
 .cert-section {
   background: var(--section-background);
   border-radius: 10px;
   margin: 40px 0;
+  position: relative;
+  z-index: 1;
 }
 
 @media (max-width: 700px) {
