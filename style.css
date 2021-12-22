@@ -169,6 +169,7 @@ iframe {
   border-radius: 10px;
   position: relative;
   z-index: 2;
+  margin-left: 40px;
 }
 
 .cert-section {
@@ -183,6 +184,12 @@ iframe {
   .links {
     display: flex;
     margin: 20px 50px;
+  }
+}
+
+@media (max-width: 370px) {
+  .certificate {
+    display: none;
   }
 }
 
@@ -205,14 +212,15 @@ iframe {
   }
 }
 
-@media (max-width: 990px) {
+@media (max-width: 991px) {
   .homepage-hero {
     border-image-slice: 50%;
     border-image-outset: 0;
   }
 
   .certificate {
-    display: none;
+    margin: 50px auto -60px;
+    width: 300px;
   }
 
   .cert-section {
@@ -222,5 +230,11 @@ iframe {
 
   .homepage-hero {
     margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+  .cert-section {
+    padding-left: 150px;
   }
 }
