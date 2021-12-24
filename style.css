@@ -1,10 +1,9 @@
 :root {
   --accent-color: rgba(147, 197, 114, 0.719);
-  --background-color: rgba(128, 128, 128, 0.062);
-  --section-background: rgba(255, 255, 255, 0.596);
+  --background-color: #d9f0de67;
   --serif-font: "DM Serif Display", serif;
   --accent-font: "Prata", serif;
-  --sans-serif-font: "Tajawal", sans-serif;
+  --sans-serif-font: "Raleway", sans-serif;
 }
 
 html {
@@ -20,7 +19,7 @@ body {
 }
 
 .navbar {
-  margin: -80px 0 80px;
+  margin: -80px 0 0;
 }
 
 .navbar-brand {
@@ -41,6 +40,11 @@ body {
 
 .nav-link:hover {
   font-size: 13px;
+}
+
+.name-image {
+  width: 600px;
+  margin: 5px -30px -20px;
 }
 
 h1 {
@@ -71,13 +75,12 @@ h4 {
   background: var(--section-background);
   border-radius: 5px;
   max-width: 700px;
-  padding: 60px 20px;
-  margin: 0 auto 100px;
-  border-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/094/original/image.png?1639852536)
-    50% round;
+  padding: 200px 80px;
+  margin: 0 auto 50px;
+  /* border-image: url(/media/border.png) 50% round;
   border-style: solid;
   border-width: 50px;
-  border-image-outset: 10px;
+  border-image-outset: 10px; */
 }
 
 p {
@@ -169,11 +172,11 @@ iframe {
   border-radius: 10px;
   position: relative;
   z-index: 2;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .cert-section {
-  background: var(--section-background);
+  background: #d9f0ded0;
   border-radius: 10px;
   margin: 40px 0;
   position: relative;
@@ -193,6 +196,19 @@ iframe {
   }
 }
 
+@media (max-width: 385px) {
+  .name-image {
+    margin-left: -35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .name-image {
+    max-width: 250px;
+    margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 700px) {
   h1 {
     font-size: 40px;
@@ -209,6 +225,11 @@ iframe {
 
   h4 {
     font-size: 30px;
+  }
+
+  .name-image {
+    width: 350px;
+    margin-bottom: -15px;
   }
 }
 
