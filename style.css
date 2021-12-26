@@ -1,7 +1,9 @@
+/* On Every Page */
+
 :root {
-  --accent-color: rgba(147, 197, 114, 0.719);
   --background-color: #d9f0de67;
-  --section-color: #d9f0ded0;
+  --accent-color: rgba(147, 197, 114, 0.719);
+  /* --section-color: #d9f0ded0; */
   --serif-font: "DM Serif Display", serif;
   --accent-font: "Prata", serif;
   --sans-serif-font: "Raleway", sans-serif;
@@ -47,15 +49,6 @@ body {
   font-size: 13px;
 }
 
-.homepage-hero {
-  margin: 200px auto 300px;
-}
-
-.name-image {
-  width: 800px;
-  margin: 5px -150px -20px;
-}
-
 h1 {
   font-family: var(--serif-font);
   font-size: 64px;
@@ -72,7 +65,6 @@ h3 {
   font-family: var(--accent-font);
   font-size: 30px;
   margin: 0 0 -10px;
-  font-weight: 600;
 }
 
 h4 {
@@ -85,29 +77,6 @@ p {
   text-align: justify;
   padding: 40px;
   border-radius: 7px;
-}
-
-.about-me-container {
-  margin-top: 50px;
-  max-width: 900px;
-}
-
-.about-section {
-  text-indent: 20px;
-  padding: 50px 30px 0 40px;
-}
-
-.me-pic {
-  width: 300px;
-  border: 10px solid transparent;
-  border-radius: 100%;
-}
-
-.skills-section {
-  font-size: 34px;
-  text-align: center;
-  word-spacing: 50px;
-  margin: 30px 0 50px;
 }
 
 a {
@@ -124,8 +93,8 @@ a:hover {
 .links {
   padding: 10px 15px 10px;
   outline: 0;
-  border: 1px solid rgba(0, 0, 0, 0.452);
-  color: rgba(0, 0, 0, 0.788);
+  border: 1px solid rgba(54, 54, 54, 0.452);
+  color: rgba(43, 43, 43, 0.788);
   cursor: pointer;
   position: relative;
   background-color: transparent;
@@ -155,6 +124,61 @@ a:hover {
 
 .links:hover {
   color: #000;
+  padding-right: 24px;
+  padding-left: 8px;
+}
+
+.footer {
+  font-size: 23px;
+  width: 40px;
+  position: fixed;
+  bottom: 30%;
+  left: 40px;
+  right: auto;
+  z-index: 10;
+}
+
+.footer2 {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+/* Homepage */
+
+.homepage-hero {
+  margin: 200px auto 200px;
+}
+
+.name-image {
+  width: 800px;
+  margin: 5px -150px -20px;
+}
+
+/* About Page */
+
+.about-me-container {
+  margin-top: 50px;
+  max-width: 900px;
+}
+
+.about-section {
+  text-indent: 20px;
+  padding: 50px 30px 0 40px;
+}
+
+.me-pic {
+  width: 300px;
+  border: 10px solid transparent;
+  border-radius: 100%;
+}
+
+.skills-section {
+  font-size: 34px;
+  text-align: center;
+  word-spacing: 50px;
+  margin: 30px 0 50px;
 }
 
 .certs {
@@ -162,41 +186,19 @@ a:hover {
   padding: 10px;
 }
 
-.border-img {
-  transform: rotate(90deg);
-}
+/* Project Page */
 
 iframe {
   width: 600px;
   height: 476px;
 }
 
-.certificate {
-  width: 500px;
-  border-radius: 10px;
-  position: relative;
-  z-index: 2;
-  margin-left: 20px;
-}
-
-.cert-section {
-  background: var(--section-color);
-  border-radius: 10px;
-  margin: 40px 0;
-  position: relative;
-  z-index: 1;
-}
+/* Responsive */
 
 @media (max-width: 340px) {
   .links {
     display: flex;
     margin: 20px 50px;
-  }
-}
-
-@media (max-width: 370px) {
-  .certificate {
-    display: none;
   }
 }
 
@@ -241,42 +243,6 @@ iframe {
   .homepage-hero {
     border-image-slice: 50%;
     border-image-outset: 0;
-  }
-
-  .certificate {
-    margin: 50px auto -60px;
-    width: 300px;
-  }
-
-  .cert-section {
-    width: 100%;
-    background: none;
-  }
-
-  .homepage-hero {
     margin-bottom: 10px;
   }
-}
-
-@media (max-width: 1200px) and (min-width: 992px) {
-  .cert-section {
-    padding-left: 150px;
-  }
-}
-
-.footer {
-  font-size: 23px;
-  width: 40px;
-  position: fixed;
-  bottom: 30%;
-  left: 40px;
-  right: auto;
-  z-index: 10;
-}
-
-.footer2 {
-  display: flex;
-  flex-direction: column;
-  -webkit-box-align: center;
-  align-items: center;
 }
