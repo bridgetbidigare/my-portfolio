@@ -80,9 +80,8 @@ p {
 }
 
 a {
-  color: black;
-  margin: 0 10px;
-  font-weight: 600;
+  color: rgb(29, 29, 29);
+  font-weight: 400;
   transition: all 200ms ease-in-out;
 }
 
@@ -93,8 +92,8 @@ a:hover {
 .links {
   padding: 10px 15px 10px;
   outline: 0;
-  border: 1px solid rgba(54, 54, 54, 0.452);
-  color: rgba(43, 43, 43, 0.788);
+  border: 1px solid rgba(75, 75, 75, 0.452);
+  color: rgba(54, 54, 54, 0.788);
   cursor: pointer;
   position: relative;
   background-color: transparent;
@@ -124,8 +123,6 @@ a:hover {
 
 .links:hover {
   color: #000;
-  padding-right: 24px;
-  padding-left: 8px;
 }
 
 .footer {
@@ -154,6 +151,36 @@ a:hover {
 .name-image {
   width: 800px;
   margin: 5px -150px -20px;
+}
+
+.home-links {
+  padding: 12px;
+  width: 220px;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-style: italic;
+}
+
+.home-links:after {
+  content: "→";
+  position: absolute;
+  opacity: 0;
+  top: 14px;
+  right: -20px;
+  transition: all 300ms ease-in-out;
+}
+
+.home-links:hover {
+  font-style: normal;
+  padding-right: 4px;
+  padding-left: 8px;
+}
+
+.home-links:hover:after {
+  opacity: 1;
+  right: 10px;
 }
 
 /* About Page */
@@ -197,8 +224,7 @@ iframe {
 
 @media (max-width: 340px) {
   .links {
-    display: flex;
-    margin: 20px 50px;
+    width: 150px;
   }
 }
 
@@ -237,12 +263,16 @@ iframe {
     width: 350px;
     margin-bottom: -15px;
   }
+
+  .links {
+    display: flex;
+    margin: 20px 100px;
+  }
 }
 
 @media (max-width: 991px) {
   .homepage-hero {
     border-image-slice: 50%;
     border-image-outset: 0;
-    margin-bottom: 10px;
   }
 }
