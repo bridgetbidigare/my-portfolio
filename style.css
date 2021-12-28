@@ -49,57 +49,27 @@ body {
   font-size: 13px;
 }
 
-h1 {
-  font-family: var(--serif-font);
-  font-size: 40px;
-  margin: 0;
-}
-
-h2 {
-  font-family: var(--accent-font);
-  font-size: 32px;
-  margin: 15px 0 0;
-}
-
-h3 {
-  font-family: var(--accent-font);
-  font-size: 30px;
-  margin: 0 0 -10px;
-}
-
-h4 {
-  font-family: var(--serif-font);
-  font-style: italic;
-  font-size: 24px;
-  margin: 10px 200px 50px;
-}
-
-h5 {
-  font-family: var(--accent-font);
-  font-weight: bold;
-}
-
-mark {
-  background-color: #0080061e;
-  margin: 15px 0;
-  line-height: 40px;
-}
-
 p {
   font-size: 18px;
   text-align: justify;
-  padding: 40px;
-  border-radius: 7px;
+  font-family: var(--sans-serif-font);
 }
 
 a {
   color: rgb(29, 29, 29);
+  font-family: var(--sans-serif-font);
   font-weight: 400;
+  cursor: pointer;
   transition: all 200ms ease-in-out;
 }
 
 a:hover {
   color: var(--accent-color);
+}
+
+h3 {
+  font-family: var(--accent-font);
+  font-size: 30px;
 }
 
 .links {
@@ -147,8 +117,18 @@ a:hover {
 
 /* Homepage */
 
+h2 {
+  font-family: var(--accent-font);
+  font-size: 32px;
+  margin: 15px 0 0;
+}
+
 .homepage-hero {
   margin: 200px auto 200px;
+}
+
+.homepage-hero h3 {
+  margin: 0 0 -10px;
 }
 
 .name-image {
@@ -164,7 +144,6 @@ a:hover {
   padding: 12px;
   width: 220px;
   transition: all 300ms ease-in-out;
-  cursor: pointer;
   display: inline-block;
   position: relative;
   text-decoration: underline;
@@ -192,6 +171,10 @@ a:hover {
 }
 
 /* About Page */
+
+.about-image {
+  width: 400px;
+}
 
 .about-me-container {
   margin-top: 50px;
@@ -225,42 +208,126 @@ a:hover {
 /* Project Page */
 
 iframe {
-  width: 600px;
-  height: 476px;
+  position: relative;
+  width: 550px;
+  height: 426px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.projects-container {
+  max-width: 900px;
+  margin-top: 60px;
+}
+
+.projects-container p {
+  padding: 0 40px 40px;
+}
+
+.projects-container a {
+  font-family: var(--accent-font);
+  transition: all 200ms ease-in-out;
+}
+
+.projects-container a:hover {
+  font-style: italic;
+}
+
+.projects-image {
+  width: 400px;
+}
+
+.app-image {
+  width: 400px;
+  border: 10px solid rgba(255, 255, 255, 0.534);
+  border-radius: 10px;
 }
 
 /* Contact Page */
 
+h1 {
+  font-family: var(--serif-font);
+  font-size: 36px;
+}
+
+h4 {
+  font-family: var(--serif-font);
+  font-style: italic;
+  font-size: 24px;
+  margin: 10px 200px 50px;
+}
+
+mark {
+  background-color: #0080061e;
+  margin: 15px 0;
+  line-height: 40px;
+}
+
+.contact-image {
+  width: 400px;
+}
+
 .contact-section {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
-.contact-section h5 {
-  margin-top: 30px;
-}
-
-.contact-section a {
-  font-family: var(--sans-serif-font);
+.contact-section h3 {
+  font-size: 24px;
+  margin: 40px 0 10px;
 }
 
 /* Responsive */
 
 @media (max-width: 340px) {
   .links {
-    width: 150px;
+    min-width: 100px;
   }
-}
 
-@media (max-width: 385px) {
   .name-image {
-    margin-left: -35px;
+    max-width: 200px;
+  }
+
+  .about-image {
+    max-width: 200px;
+  }
+
+  .certs {
+    max-width: 200px;
+  }
+
+  .projects-image {
+    max-width: 200px;
+  }
+
+  .contact-image {
+    max-width: 200px;
   }
 }
 
 @media (max-width: 480px) {
   .name-image {
-    max-width: 250px;
+    max-width: 300px;
     margin-bottom: 20px;
+  }
+
+  .about-image {
+    max-width: 250px;
+  }
+
+  .certs {
+    max-width: 300px;
+  }
+
+  .projects-image {
+    max-width: 250px;
+  }
+
+  .app-image {
+    max-width: 250px;
+  }
+
+  .contact-image {
+    max-width: 250px;
   }
 }
 
@@ -288,9 +355,17 @@ iframe {
     margin-bottom: -15px;
   }
 
+  .certs {
+    margin-bottom: 10px;
+  }
+
   .links {
     display: flex;
     margin: 20px 100px;
+  }
+
+  iframe {
+    display: none;
   }
 }
 
@@ -307,6 +382,10 @@ iframe {
   .me-pic {
     display: block;
     margin: 0 auto;
+  }
+
+  .projects-container {
+    max-width: 500px;
   }
 }
 
