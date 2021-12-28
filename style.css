@@ -75,7 +75,7 @@ h3 {
   padding: 10px 15px 10px;
   outline: 0;
   border: 1px solid rgba(75, 75, 75, 0.452);
-  color: rgba(54, 54, 54, 0.788);
+  color: rgb(54, 54, 54);
   cursor: pointer;
   position: relative;
   background-color: transparent;
@@ -105,6 +105,12 @@ h3 {
 
 .links:hover {
   color: #000;
+}
+
+.open-source-link {
+  font-size: 12px;
+  text-align: center;
+  margin: 60px 0 0;
 }
 
 .footer {
