@@ -51,7 +51,7 @@ body {
 
 h1 {
   font-family: var(--serif-font);
-  font-size: 64px;
+  font-size: 40px;
   margin: 0;
 }
 
@@ -68,7 +68,21 @@ h3 {
 }
 
 h4 {
-  margin: 0 100px 50px;
+  font-family: var(--serif-font);
+  font-style: italic;
+  font-size: 24px;
+  margin: 10px 200px 50px;
+}
+
+h5 {
+  font-family: var(--accent-font);
+  font-weight: bold;
+}
+
+mark {
+  background-color: #0080061e;
+  margin: 15px 0;
+  line-height: 40px;
 }
 
 p {
@@ -215,6 +229,20 @@ iframe {
   height: 476px;
 }
 
+/* Contact Page */
+
+.contact-section {
+  margin-bottom: 60px;
+}
+
+.contact-section h5 {
+  margin-top: 30px;
+}
+
+.contact-section a {
+  font-family: var(--sans-serif-font);
+}
+
 /* Responsive */
 
 @media (max-width: 340px) {
@@ -251,7 +279,8 @@ iframe {
   }
 
   h4 {
-    font-size: 30px;
+    font-size: 22px;
+    margin: 10px 20px 50px;
   }
 
   .name-image {
