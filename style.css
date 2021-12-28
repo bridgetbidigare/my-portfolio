@@ -98,7 +98,7 @@ a:hover {
   position: relative;
   background-color: transparent;
   text-decoration: none;
-  margin-left: 18px;
+  margin-left: 20px;
   border-radius: 2px;
 }
 
@@ -127,19 +127,9 @@ a:hover {
 
 .footer {
   font-size: 23px;
-  width: 40px;
-  position: fixed;
-  bottom: 30%;
-  left: 40px;
-  right: auto;
-  z-index: 10;
-}
-
-.footer2 {
   display: flex;
-  flex-direction: column;
-  -webkit-box-align: center;
-  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 50px;
 }
 
 /* Homepage */
@@ -216,6 +206,7 @@ a:hover {
 .certs {
   width: 400px;
   padding: 10px;
+  margin-bottom: 50px;
 }
 
 /* Project Page */
@@ -279,5 +270,33 @@ iframe {
   .homepage-hero {
     border-image-slice: 50%;
     border-image-outset: 0;
+  }
+
+  .about-section {
+    margin: 0 auto 20px;
+  }
+
+  .me-pic {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  .footer {
+    font-size: 23px;
+    width: 40px;
+    position: fixed;
+    bottom: 30%;
+    left: 40px;
+    right: auto;
+    z-index: 10;
+  }
+
+  .footer2 {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
   }
 }
